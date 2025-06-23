@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarPI: Project Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .background-img {
+      background-image: url('images/hero-car-image.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #363630;
+    }
+    .section-feature-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .section-content {
+      font-size: 1.125rem;
+      color: #4a4a4a;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+    .button-primary {
+      background-color: #726e79;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .button-primary:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-black">
+
+  <!-- Navigation -->
+  <nav class="bg-gray-900 text-white p-4 fixed top-0 left-0 w-full z-50 shadow-md">
+    <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+      <a href="#" class="text-3xl font-semibold">CarPI</a>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-green-500">About</a></li>
+        <li><a href="#features" class="hover:text-green-500">Features</a></li>
+        <li><a href="#ui-design" class="hover:text-green-500">UI Design</a></li>
+        <li><a href="#poster" class="hover:text-green-500">Poster</a></li>
+        <li><a href="#presentation" class="hover:text-green-500">Presentation</a></li>
+        <li><a href="#contact" class="hover:text-green-500">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="background-img flex justify-center items-center text-center text-white">
+    <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+      <h1 class="text-5xl font-bold mb-4">Create Your Dream Car with CarPI</h1>
+      <p class="text-lg mb-6">AI-powered customization for every car lover.</p>
+      <a href="#features" class="button-primary">Explore Features</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="section-title">About CarPI</h2>
+      <p class="section-content">
+        CarPI (Creative Car Builder and Editor AI) is a next-generation, web-based application designed to empower users in creating, customizing, and exporting car designs using artificial intelligence and manual editing tools.
+      </p>
+
+      <p class="section-content">
+        The system is developed with a modular architecture: the frontend is built in ReactJS, the backend uses Node.js and Python (FastAPI), and PostgreSQL is utilized for data management. For AI-driven operations, CarPI integrates powerful machine learning models such as GANs and CNNs alongside DALL·E API and PyTorch.
+      </p>
+
+      <p class="section-content">
+        Users can select predefined car models and customize them in two ways: using AI-generated designs via descriptive prompts, or manual editing tools to modify features like color, rims, and accessories. All user-generated designs can be saved, shared, or exported in PNG, JPEG, or PDF formats.
+      </p>
+
+      <p class="section-content">
+        CarPI also supports multilingual interfaces, real-time design previews, and role-based access for features like design history, premium exports, and user-specific customization workflows. Its scalable architecture ensures a seamless experience for both casual users and automotive design enthusiasts worldwide.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+  <section id="features" class="bg-gray-900 text-white py-16 px-6">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="section-feature-title">Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <h3 class="text-2xl font-semibold mb-4 border-b-2 border-white pb-2">AI-Powered Car Design</h3>
+          <p class="text-base text-gray-300">Generate car designs using AI tools...</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <h3 class="text-2xl font-semibold mb-4 border-b-2 border-white pb-2">Manual Car Editing</h3>
+          <p class="text-base text-gray-300">Take full control by manually editing the car’s features...</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <h3 class="text-2xl font-semibold mb-4 border-b-2 border-white pb-2">AI Customization Assistance</h3>
+          <p class="text-base text-gray-300">Let AI suggest styles based on preferences and trends.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UI Design Showcase -->
+  <section id="ui-design" class="py-16 px-6 bg-gray-100">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="section-title">UI Design Showcase</h2>
+      <p class="section-content text-gray-700 mb-12">A preview of different pages in the CarPI application.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Repeat this card for each screenshot -->
+        <!-- Example: Home Page -->
+        <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg text-white">
+          <a href="project_screenshots/homepage.png" target="_blank">
+            <img src="project_screenshots/homepage.png" alt="Homepage" class="w-full object-cover" />
+          </a>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Home Page</h3>
+            <p>The main landing page showcasing CarPI's features.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg text-white">
+          <a href="project_screenshots/about.png" target="_blank">
+            <img src="project_screenshots/about.png" alt="About" class="w-full object-cover" />
+          </a>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">About Page</h3>
+            <p>Information about the project vision.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg text-white">
+          <a href="project_screenshots/login.png" target="_blank">
+            <img src="project_screenshots/login.png" alt="Login" class="w-full object-cover" />
+          </a>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Login Page</h3>
+            <p>Secure and user-friendly login interface.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg text-white">
+          <a href="project_screenshots/register.png" target="_blank">
+            <img src="project_screenshots/register.png" alt="Register" class="w-full object-cover" />
+          </a>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Register Page</h3>
+            <p>Easy-to-use registration form for new users.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg text-white">
+          <a href="project_screenshots/creative ai.png" target="_blank">
+            <img src="project_screenshots/creative ai.png" alt="Creative AI" class="w-full object-cover" />
+          </a>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">AI Prompt-Based Design</h3>
+            <p>Generate designs with creative prompts.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg text-white">
+          <a href="project_screenshots/manual editing.png" target="_blank">
+            <img src="project_screenshots/manual editing.png" alt="Manual Editing" class="w-full object-cover" />
+          </a>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Manual Editing</h3>
+            <p>Edit cars manually by color and type.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg text-white">
+          <a href="project_screenshots/manual selection.png" target="_blank">
+            <img src="project_screenshots/manual selection.png" alt="Manual Selection" class="w-full object-cover" />
+          </a>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Manual Selection</h3>
+            <p>Select specific models and edit them.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg text-white">
+          <a href="project_screenshots/manual selection 2.png" target="_blank">
+            <img src="project_screenshots/manual selection 2.png" alt="Manual Selection 2" class="w-full object-cover" />
+          </a>
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Manual Selection 2</h3>
+            <p>Second version of manual selection view.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Poster -->
+  <section id="poster" class="py-16 px-6 bg-white">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="section-title">Project Poster</h2>
+      <p class="section-content text-gray-700 mb-8">A summary of our project at a glance.</p>
+      <img src="folder/poster.png" alt="Project Poster" class="mx-auto rounded-lg shadow-md max-w-3xl w-full">
+    </div>
+  </section>
+
+  <!-- Presentation -->
+  <section id="presentation" class="py-16 px-6 bg-gray-100">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="section-title mb-6">Presentation</h2>
+      <p class="section-content text-gray-700 mb-12">
+        You can browse the slides we used to present our project below.
+      </p>
+      <div id="presentation-slides" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+    </div>
+  </section>
+
+  <script>
+    const container = document.getElementById("presentation-slides");
+    for (let i = 1; i <= 19; i++) {
+      const div = document.createElement("div");
+      div.className = "overflow-hidden rounded-lg shadow hover:shadow-xl transition-transform transform hover:scale-105";
+      const link = document.createElement("a");
+      link.href = `presentation/${i}.png`;
+      link.target = "_blank";
+      const img = document.createElement("img");
+      img.src = `presentation/${i}.png`;
+      img.alt = `Slide ${i}`;
+      img.className = "w-full h-auto";
+      link.appendChild(img);
+      div.appendChild(link);
+      container.appendChild(div);
+    }
+  </script>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-6 bg-white">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-content text-gray-700">Have questions or feedback? Get in touch with us today!</p>
+      <a href="mailto:support@carpi.com" class="button-primary">Send Message</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <p class="text-sm">&copy; 2025 CarPI. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
